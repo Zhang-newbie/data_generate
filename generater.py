@@ -4,6 +4,13 @@ from abc import abstractmethod
 
 class BaseGenerate:
     def __init__(self,path,begin,end):
+        """
+            生成器基类
+            path: 生成数据的路径
+            begin: 生成数据的开始编号
+            end: 生成数据的结束编号
+
+        """
         self.path = path
         self.begin = begin
         self.end = end
